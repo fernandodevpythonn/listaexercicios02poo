@@ -1,4 +1,4 @@
-from encapsulamento.aluno_info import aluno
+from encapsulamento.aluno_info2 import aluno
 alu = aluno()
 def menu():
     print("1 - cadastrar aluno")

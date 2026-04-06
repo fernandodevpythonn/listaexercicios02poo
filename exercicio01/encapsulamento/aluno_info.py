@@ -1,8 +1,8 @@
 class aluno:
-    def __init__(self, nome = "sem nome"):
-        self.__matricula
+    def __init__(self,nome = "sem nome"):
         self.nome = nome
-        self.__senha
+        self.__matricula = ""
+        self.__senha = ""
     
     @property
     def matricula(self):
@@ -10,8 +10,8 @@ class aluno:
     
     @matricula.setter
     def matricula(self,valor):
-        matricula_in = valor
-        self.__matricula = matricula_in
+        matricula_alu = valor
+        self.__matricula = matricula_alu
 
     @property
     def senha(self):
@@ -19,12 +19,10 @@ class aluno:
     
     @senha.setter
     def senha(self,valor):
-        valor = 181818
-        senha_aluno = valor
-        self.senha = senha_aluno
+        senha_alu = valor
+        self.__senha = senha_alu
 
     def mostrar_senha(self):
-        print(f"Senha: {self.matricula}")
+        print(f"Senha: {self.senha}")
     def mostrar_matricula(self):
         print(f"Matricula: {self.matricula}")
-    
