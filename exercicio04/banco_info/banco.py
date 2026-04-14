@@ -12,8 +12,10 @@ class ContaBancaria:
         self.__saldo = saldo_cli
 
     def get_senha(self):
+        """mostra a senha"""
         print(self.saldo)
     def set_senha(self):
+        """altera a senha"""
         self.senha = input("Atualizar senha(minimo 6 caracteres): ")
         if len(self.senha) < 6:
             raise ValueError("Erro: Digite uma senha com mais de 6 caracteres")

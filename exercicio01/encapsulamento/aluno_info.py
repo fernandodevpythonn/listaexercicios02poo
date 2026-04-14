@@ -23,6 +23,8 @@ class aluno:
         self.__senha = senha_alu
 
     def mostrar_senha(self):
+        """mostra a senha"""
         print(f"Senha: {self.senha}")
     def mostrar_matricula(self):
+        """mostra a matricula"""
         print(f"Matricula: {self.matricula}")

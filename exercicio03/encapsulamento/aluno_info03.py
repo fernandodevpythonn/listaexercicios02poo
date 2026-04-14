@@ -23,11 +23,14 @@ class aluno:
         self.__senha = senha_alu
 
     def mostrar_senha(self):
+        """mostra a senha"""
         print(f"Senha: {self.senha}")
     def set_senha(self):
+        """autera a senha"""
         self.senha = int(input("Defina a nova senha: "))
         if len(self.senha) <6:
             raise ValueError("Erro: tamanho de senha inválida(minimo 6 digitos)")
             
     def mostrar_matricula(self):
+        """mostra a matricula"""
         print(f"Matricula: {self.matricula}")

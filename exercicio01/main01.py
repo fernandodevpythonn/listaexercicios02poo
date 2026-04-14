@@ -1,11 +1,11 @@
-from encapsulamento.aluno_info2 import aluno
+from .encapsulamento.aluno_info import aluno
 alu = aluno()
 def menu():
     print("1 - cadastrar aluno")
     print("2 -  mostrar senha")
     print("3 - mostrar matricula")
 
-def main():
+def main01():
     while True:
         menu()
         opcao = input("opcao: ")
@@ -18,6 +18,3 @@ def main():
                 alu.mostrar_senha()
             case "3":
                 alu.mostrar_matricula()
-
-if __name__ == "__main__":
-    main()

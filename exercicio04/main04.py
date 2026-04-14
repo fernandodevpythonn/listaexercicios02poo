@@ -1,9 +1,9 @@
-from banco_info.banco import ContaBancaria
+from .banco_info.banco import ContaBancaria
 conta = ContaBancaria()
 def menu():
     print("1 - mostrar senha")
     print("2 - atualizar senha")
-def main():
+def main04():
     while True:
         menu()
         opcao = input("escolha uma opção: ")
@@ -14,5 +14,3 @@ def main():
                 conta.set_senha()
 
 
-if __name__ == "__main__":
-    main()
