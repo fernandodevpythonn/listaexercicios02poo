@@ -39,8 +39,12 @@ class Funcionario:
         except ValueError:
             print("erro: valor inválido")
 
+    def mostrar_salario(self):
+        """mostra o salário do funcionário"""
+        print(f"salário: {self.salario}")
+
     def mostrar_detalhes(self):
         """mostra os detalhes do funcionário"""
-        print(self.nome)
-        print(self.cargo)
-        print(self.salario)
+        print(f"Nome: {self.nome}")
+        print(f"Cargo: {self.cargo}")
+        print(f"Salário: {self.salario}")

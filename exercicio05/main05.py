@@ -3,6 +3,7 @@ fun = Funcionario()
 def menu():
     print("1 - adicionar dados")
     print("2 - mostrar dados")
+    print("3 - mostrar salário")
 
 def main05():
     while True:
@@ -13,3 +14,5 @@ def main05():
              fun.adicionar_dados()
             case "2":
               fun.mostrar_detalhes()
+            case "3":
+              fun.mostrar_salario()
